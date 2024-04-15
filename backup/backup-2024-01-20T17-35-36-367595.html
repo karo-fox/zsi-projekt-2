@@ -1,0 +1,948 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Pasjans Raport</title>
+  </head>
+  <body>
+    <header class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">Raport - Pasjans - backup: 2024-01-20T17-35-36-367595</p>
+        <p class="subtitle">Karolina Kozubik</p>
+      </div>
+    </header>
+    <main style="min-height: 60vh;">
+      <div class="is-flex is-justify-content-center">
+        <table class="table is-hoverable">
+          <thead>
+            <tr>
+              <th>Indeks</th>
+              <th>Rozgrywki do przeprowadzenia</th>
+              <th>Czy udało się wygrać?</th>
+              <th>Przeprowadzone rozgrywki</th>
+              <th>Ostatnia rozegrana partia</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <th>1</th>
+              <td>10</td>
+              <td>True
+</td>
+              <td>8
+</td>
+              <td>
+                <button
+                  class="button is-primary"
+                  id="button-1"
+                  onclick="changeGameStatus('1')"
+                >
+                  Rozgrywka
+                </button>
+              </td>
+            </tr>
+            <tr id="game-1" hidden>
+              <td colspan="5">
+                <pre class="is-flex is-justify-content-center is-size-6">
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	
+hand: K♠
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	K♠	
+XXX	XXX	XXX	
+hand: 10♠
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	K♠	
+XXX	XXX	XXX	
+hand: K♣
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	K♣	K♠	
+XXX	XXX	XXX	
+hand: A♦
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	K♣	K♠	
+XXX	A♦	XXX	
+hand: J♦
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+XXX	J♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	K♣	K♠	
+XXX	A♦	XXX	
+hand: 10♦
+
+XXX	XXX	XXX	XXX	
+XXX	10♦	XXX	10♠	
+XXX	J♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	K♣	K♠	
+XXX	A♦	XXX	
+hand: 10♣
+
+XXX	XXX	XXX	XXX	
+XXX	10♦	10♣	10♠	
+XXX	J♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	K♣	K♠	
+XXX	A♦	XXX	
+hand: K♦
+
+XXX	XXX	XXX	XXX	
+XXX	10♦	10♣	10♠	
+XXX	J♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	K♦	K♣	K♠	
+XXX	A♦	XXX	
+hand: Q♠
+
+XXX	XXX	XXX	XXX	
+XXX	10♦	10♣	10♠	
+XXX	J♦	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	XXX	
+hand: J♥
+
+XXX	XXX	XXX	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	XXX	
+hand: A♣
+
+XXX	XXX	XXX	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: 9♣
+
+XXX	XXX	9♣	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: J♠
+
+XXX	XXX	9♣	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	XXX	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: 9♦
+
+XXX	9♦	9♣	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	XXX	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: Q♦
+
+XXX	9♦	9♣	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	Q♦	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: 9♥
+
+9♥	9♦	9♣	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	Q♦	XXX	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: Q♣
+
+9♥	9♦	9♣	XXX	
+XXX	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	Q♦	Q♣	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: 10♥
+
+9♥	9♦	9♣	XXX	
+10♥	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	Q♦	Q♣	Q♠	
+XXX	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: K♥
+
+9♥	9♦	9♣	XXX	
+10♥	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: A♥
+
+9♥	9♦	9♣	XXX	
+10♥	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+XXX	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+A♥	A♦	A♣	
+hand: Q♥
+
+9♥	9♦	9♣	XXX	
+10♥	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+A♥	A♦	A♣	
+hand: 9♠
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+A♥	A♦	A♣	
+hand: J♣
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+A♥	A♦	A♣	
+hand: A♠
+
+
+            </pre
+                >
+              </td>
+            </tr>
+            
+            <tr>
+              <th>2</th>
+              <td>1</td>
+              <td>True
+</td>
+              <td>1
+</td>
+              <td>
+                <button
+                  class="button is-primary"
+                  id="button-2"
+                  onclick="changeGameStatus('2')"
+                >
+                  Rozgrywka
+                </button>
+              </td>
+            </tr>
+            <tr id="game-2" hidden>
+              <td colspan="5">
+                <pre class="is-flex is-justify-content-center is-size-6">
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	
+hand: J♥
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	
+hand: K♦
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: 10♠
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+J♥	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: J♣
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+J♥	XXX	J♣	XXX	
+XXX	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: J♦
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+J♥	J♦	J♣	XXX	
+XXX	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: J♠
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+J♥	J♦	J♣	J♠	
+XXX	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: Q♥
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: 9♥
+
+9♥	XXX	XXX	XXX	
+XXX	XXX	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: 10♦
+
+9♥	XXX	XXX	XXX	
+XXX	10♦	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: K♠
+
+9♥	XXX	XXX	XXX	
+XXX	10♦	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	XXX	XXX	XXX	
+XXX	K♦	XXX	K♠	
+XXX	XXX	XXX	
+hand: Q♠
+
+9♥	XXX	XXX	XXX	
+XXX	10♦	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	XXX	XXX	Q♠	
+XXX	K♦	XXX	K♠	
+XXX	XXX	XXX	
+hand: 9♠
+
+9♥	XXX	XXX	9♠	
+XXX	10♦	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	XXX	XXX	Q♠	
+XXX	K♦	XXX	K♠	
+XXX	XXX	XXX	
+hand: A♣
+
+9♥	XXX	XXX	9♠	
+XXX	10♦	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	XXX	XXX	Q♠	
+XXX	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: Q♦
+
+9♥	XXX	XXX	9♠	
+XXX	10♦	XXX	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	XXX	Q♠	
+XXX	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: 10♣
+
+9♥	XXX	XXX	9♠	
+XXX	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	XXX	Q♠	
+XXX	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: K♥
+
+9♥	XXX	XXX	9♠	
+XXX	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: Q♣
+
+9♥	XXX	XXX	9♠	
+XXX	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: 9♦
+
+9♥	9♦	XXX	9♠	
+XXX	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: 9♣
+
+9♥	9♦	9♣	9♠	
+XXX	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: 10♥
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	XXX	K♠	
+XXX	XXX	A♣	
+hand: K♣
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	XXX	A♣	
+hand: A♦
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: A♥
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+A♥	A♦	A♣	
+hand: A♠
+
+
+            </pre
+                >
+              </td>
+            </tr>
+            
+            <tr>
+              <th>3</th>
+              <td>100</td>
+              <td>True
+</td>
+              <td>3
+</td>
+              <td>
+                <button
+                  class="button is-primary"
+                  id="button-3"
+                  onclick="changeGameStatus('3')"
+                >
+                  Rozgrywka
+                </button>
+              </td>
+            </tr>
+            <tr id="game-3" hidden>
+              <td colspan="5">
+                <pre class="is-flex is-justify-content-center is-size-6">
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	
+hand: K♥
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+K♥	XXX	XXX	XXX	
+XXX	XXX	XXX	
+hand: 9♦
+
+XXX	9♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+K♥	XXX	XXX	XXX	
+XXX	XXX	XXX	
+hand: A♣
+
+XXX	9♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+K♥	XXX	XXX	XXX	
+XXX	XXX	A♣	
+hand: Q♥
+
+XXX	9♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+Q♥	XXX	XXX	XXX	
+K♥	XXX	XXX	XXX	
+XXX	XXX	A♣	
+hand: J♥
+
+XXX	9♦	XXX	XXX	
+XXX	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+Q♥	XXX	XXX	XXX	
+K♥	XXX	XXX	XXX	
+XXX	XXX	A♣	
+hand: 10♥
+
+XXX	9♦	XXX	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+Q♥	XXX	XXX	XXX	
+K♥	XXX	XXX	XXX	
+XXX	XXX	A♣	
+hand: K♠
+
+XXX	9♦	XXX	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+Q♥	XXX	XXX	XXX	
+K♥	XXX	XXX	K♠	
+XXX	XXX	A♣	
+hand: Q♠
+
+XXX	9♦	XXX	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+Q♥	XXX	XXX	Q♠	
+K♥	XXX	XXX	K♠	
+XXX	XXX	A♣	
+hand: 9♣
+
+XXX	9♦	9♣	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+Q♥	XXX	XXX	Q♠	
+K♥	XXX	XXX	K♠	
+XXX	XXX	A♣	
+hand: A♦
+
+XXX	9♦	9♣	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+Q♥	XXX	XXX	Q♠	
+K♥	XXX	XXX	K♠	
+XXX	A♦	A♣	
+hand: Q♦
+
+XXX	9♦	9♣	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	XXX	
+Q♥	Q♦	XXX	Q♠	
+K♥	XXX	XXX	K♠	
+XXX	A♦	A♣	
+hand: J♠
+
+XXX	9♦	9♣	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	XXX	XXX	K♠	
+XXX	A♦	A♣	
+hand: Q♣
+
+XXX	9♦	9♣	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	XXX	K♠	
+XXX	A♦	A♣	
+hand: K♣
+
+XXX	9♦	9♣	XXX	
+10♥	XXX	XXX	XXX	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+XXX	A♦	A♣	
+hand: 10♠
+
+XXX	9♦	9♣	XXX	
+10♥	XXX	XXX	10♠	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+XXX	A♦	A♣	
+hand: 9♠
+
+XXX	9♦	9♣	9♠	
+10♥	XXX	XXX	10♠	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+XXX	A♦	A♣	
+hand: 10♦
+
+XXX	9♦	9♣	9♠	
+10♥	10♦	XXX	10♠	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+XXX	A♦	A♣	
+hand: 10♣
+
+XXX	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+XXX	A♦	A♣	
+hand: 9♥
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+XXX	A♦	A♣	
+hand: A♥
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	XXX	XXX	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+A♥	A♦	A♣	
+hand: J♣
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	XXX	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+A♥	A♦	A♣	
+hand: J♦
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	XXX	K♣	K♠	
+A♥	A♦	A♣	
+hand: K♦
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+A♥	A♦	A♣	
+hand: A♠
+
+
+            </pre
+                >
+              </td>
+            </tr>
+            
+            <tr>
+              <th>4</th>
+              <td>0</td>
+              <td>False
+</td>
+              <td>0
+</td>
+              <td>
+                <button
+                  class="button is-primary"
+                  id="button-4"
+                  onclick="changeGameStatus('4')"
+                >
+                  Rozgrywka
+                </button>
+              </td>
+            </tr>
+            <tr id="game-4" hidden>
+              <td colspan="5">
+                <pre class="is-flex is-justify-content-center is-size-6">
+
+
+            </pre
+                >
+              </td>
+            </tr>
+            
+            <tr>
+              <th>5</th>
+              <td>50</td>
+              <td>True
+</td>
+              <td>2
+</td>
+              <td>
+                <button
+                  class="button is-primary"
+                  id="button-5"
+                  onclick="changeGameStatus('5')"
+                >
+                  Rozgrywka
+                </button>
+              </td>
+            </tr>
+            <tr id="game-5" hidden>
+              <td colspan="5">
+                <pre class="is-flex is-justify-content-center is-size-6">
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	
+hand: K♦
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: K♥
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+K♥	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: Q♠
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+K♥	K♦	XXX	XXX	
+XXX	XXX	XXX	
+hand: K♣
+
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	XXX	XXX	
+hand: 9♠
+
+XXX	XXX	XXX	9♠	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	XXX	XXX	
+hand: 10♥
+
+XXX	XXX	XXX	9♠	
+10♥	XXX	XXX	XXX	
+XXX	XXX	XXX	XXX	
+XXX	XXX	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	XXX	XXX	
+hand: J♠
+
+XXX	XXX	XXX	9♠	
+10♥	XXX	XXX	XXX	
+XXX	XXX	XXX	J♠	
+XXX	XXX	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	XXX	XXX	
+hand: 10♣
+
+XXX	XXX	XXX	9♠	
+10♥	XXX	10♣	XXX	
+XXX	XXX	XXX	J♠	
+XXX	XXX	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	XXX	XXX	
+hand: Q♥
+
+XXX	XXX	XXX	9♠	
+10♥	XXX	10♣	XXX	
+XXX	XXX	XXX	J♠	
+Q♥	XXX	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	XXX	XXX	
+hand: Q♦
+
+XXX	XXX	XXX	9♠	
+10♥	XXX	10♣	XXX	
+XXX	XXX	XXX	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	XXX	XXX	
+hand: A♦
+
+XXX	XXX	XXX	9♠	
+10♥	XXX	10♣	XXX	
+XXX	XXX	XXX	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	A♦	XXX	
+hand: 9♦
+
+XXX	9♦	XXX	9♠	
+10♥	XXX	10♣	XXX	
+XXX	XXX	XXX	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	A♦	XXX	
+hand: 10♠
+
+XXX	9♦	XXX	9♠	
+10♥	XXX	10♣	10♠	
+XXX	XXX	XXX	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	A♦	XXX	
+hand: J♦
+
+XXX	9♦	XXX	9♠	
+10♥	XXX	10♣	10♠	
+XXX	J♦	XXX	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	A♦	XXX	
+hand: J♣
+
+XXX	9♦	XXX	9♠	
+10♥	XXX	10♣	10♠	
+XXX	J♦	J♣	J♠	
+Q♥	Q♦	XXX	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	A♦	XXX	
+hand: Q♣
+
+XXX	9♦	XXX	9♠	
+10♥	XXX	10♣	10♠	
+XXX	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	A♦	XXX	
+hand: A♣
+
+XXX	9♦	XXX	9♠	
+10♥	XXX	10♣	10♠	
+XXX	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	XXX	
+XXX	A♦	A♣	
+hand: K♠
+
+XXX	9♦	XXX	9♠	
+10♥	XXX	10♣	10♠	
+XXX	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: 9♥
+
+9♥	9♦	XXX	9♠	
+10♥	XXX	10♣	10♠	
+XXX	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: 10♦
+
+9♥	9♦	XXX	9♠	
+10♥	10♦	10♣	10♠	
+XXX	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: J♥
+
+9♥	9♦	XXX	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: 9♣
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+XXX	A♦	A♣	
+hand: A♥
+
+9♥	9♦	9♣	9♠	
+10♥	10♦	10♣	10♠	
+J♥	J♦	J♣	J♠	
+Q♥	Q♦	Q♣	Q♠	
+K♥	K♦	K♣	K♠	
+A♥	A♦	A♣	
+hand: A♠
+
+
+            </pre
+                >
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <strong>Raport - Pasjans</strong> by
+        <strong>Karolina Kozubik</strong> 2023
+      </div>
+    </footer>
+    <script>
+      function changeGameStatus(idx) {
+        document.getElementById(`game-${idx}`).hidden =
+          !document.getElementById(`game-${idx}`).hidden;
+      }
+    </script>
+  </body>
+</html>

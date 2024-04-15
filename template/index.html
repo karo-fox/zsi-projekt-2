@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Pasjans Raport</title>
+  </head>
+  <body>
+    <header class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">Raport - Pasjans</p>
+        <p class="subtitle">Karolina Kozubik</p>
+      </div>
+    </header>
+    <main style="min-height: 60vh;">
+      <div class="is-flex is-justify-content-center">
+        <table class="table is-hoverable">
+          <thead>
+            <tr>
+              <th>Indeks</th>
+              <th>Rozgrywki do przeprowadzenia</th>
+              <th>Czy udało się wygrać?</th>
+              <th>Przeprowadzone rozgrywki</th>
+              <th>Ostatnia rozegrana partia</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in data %}
+            <tr>
+              <th>{{ row.idx }}</th>
+              <td>{{ row.input }}</td>
+              <td>{{ row.result }}</td>
+              <td>{{ row.counter }}</td>
+              <td>
+                <button
+                  class="button is-primary"
+                  id="button-{{ row.idx }}"
+                  onclick="changeGameStatus('{{ row.idx }}')"
+                >
+                  Rozgrywka
+                </button>
+              </td>
+            </tr>
+            <tr id="game-{{ row.idx }}" hidden>
+              <td colspan="5">
+                <pre class="is-flex is-justify-content-center is-size-6">
+{{ row.game }}
+            </pre
+                >
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <strong>Raport - Pasjans</strong> by
+        <strong>Karolina Kozubik</strong> 2023
+      </div>
+    </footer>
+    <script>
+      function changeGameStatus(idx) {
+        document.getElementById(`game-${idx}`).hidden =
+          !document.getElementById(`game-${idx}`).hidden;
+      }
+    </script>
+  </body>
+</html>
