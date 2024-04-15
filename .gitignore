@@ -1,0 +1,8 @@
+in/*
+out/*
+backup/*
+
+**/*/__pycache__
+.env
+.venv
+__pycache__

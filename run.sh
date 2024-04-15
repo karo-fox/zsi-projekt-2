@@ -26,7 +26,7 @@ done
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
-        -r | --report) python -m html_report ${files[*]} > ./report/index.html; firefox ./report/index.html ;;
+        -r | --report) python -m html_report ${files[*]} > ./report/index.html ;;
         -b | --backup) python -m backup ;;
         -h | --help) help ;;
     esac

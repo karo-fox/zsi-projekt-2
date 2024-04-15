@@ -4,8 +4,8 @@ from jinja2 import Template
 
 def get_input_data(files_num):
     inputs = []
-    for num in range(1, files_num + 1):
-        with open(f"./in/in{num}.txt") as f:
+    for num in range(files_num):
+        with open(f"./in/in{num:02}.txt") as f:
             inputs.append(f.read())
     return inputs
 
